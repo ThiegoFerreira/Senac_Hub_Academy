@@ -41,52 +41,7 @@ body{
     color: #ff6e27;
 }
 
-.cta2{
-    width: 35%;
-    height: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    margin-top: 8%;
-    margin-left:24%;
-    transform: scaleX(-1) scale(0.13) skew(20deg, 20deg);
-    /* background-color: antiquewhite; */
-    position: absolute;
-}
-.titulo2{
-    font-size: 4rem;
-    color: aliceblue;
 
-}
-
-.cta2 .descricao2{
-    font-size: 1.2rem;
-    color: #ff6e27;
-}
-.cta3{
-    width: 35%;
-    height: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    margin-top: 4%;
-    margin-left: 35%;
-    transform: scaleX(-1) scale(0.2) skew(20deg, 20deg);
-    /* background-color: antiquewhite; */
-    position: absolute;
-
-}
-
-.titulo3{
-    font-size: 4rem;
-    color: aliceblue;
-
-}
-
-.cta3 .descricao3{
-    font-size: 1.2rem;
-    color: #ff6e27;
-}
 
 @media screen and (max-width: 720px) {
     .home{
@@ -96,6 +51,7 @@ body{
         width: 100%;
         text-align: center;
         align-items: center;
+        
     }
     .cta .title{
         font-size: 2.5rem;
@@ -105,39 +61,74 @@ body{
     }
     .quemsou{
         min-height: 100%;
-    }    
+
+        
+    } 
     .box-texto{
-        width: 100%;
+        min-width: 100%;
+        width:100%;
         text-align: center;
         align-items: center;
+        
     }
-    .titulo-texto{
+    .box-texto .titulo-texto{
         font-size: 2.5rem;
     }
     .box-texto .texto{
         font-size: 2rem;
+    }
+    .nav-item a{
+        font-size: 14px;
+    }
+    .projetos{
+        margin-top: 5%;
+        min-height: 100%;
+    }
+    .projetos-box{
+        width: 100%;
+        min-width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-top: 1%;
+    }
+    .cards{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .contato{
+        min-height: 100%;
+          
+    }
+    .contato-box{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        
+        min-width: 100%;
+    }
+    .contato-titulo{
+        font-size: 4rem;
+        color: aliceblue;
     }
 
 /* QUEM SOU */
 }
 .quemsou{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* justify-content: center; */
-    min-width: 100vh;
     min-height: calc(100vh - 100px);
     position: relative;
-    /* background-color: antiquewhite; */
+    justify-content: flex-start;
+      
 }
 
 .box-texto{
     width: 35%;
     display: flex;
     flex-direction: column;
+    gap: 28px;
     margin-top: 5%;
     padding-left: 5%;
-    /* background-color: blueviolet; */
 }
 .titulo-texto{
     font-size: 4rem;
@@ -148,44 +139,7 @@ body{
     font-size: 1.2rem;
     color: #ff6e27;
 }
-.box-texto2{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    /* margin-top: %; */
-    margin-left:24%;
-    transform: scaleX(-1) scale(0.13) skew(1deg, 30deg);
-    /* background-color: blueviolet; */
-    position: absolute;
-}
-.titulo-texto2{
-    font-size: 4rem;
-    color: aliceblue;
-}
 
-.box-texto2 .texto2{
-    font-size: 1.2rem;
-    color: #ff6e27;
-}
-.box-texto3{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    margin-top: -3%;
-    margin-left: 35%;
-    transform: scaleX(-1) scale(0.2) skew(1deg, 30deg);
-    /* background-color: blueviolet; */
-    position: absolute;
-}
-.titulo-texto3{
-    font-size: 4rem;
-    color: aliceblue;
-}
-
-.box-texto3 .texto3{
-    font-size: 1.2rem;
-    color: #ff6e27;
-}
 /* PROJETOS */
 
 .projetos {
@@ -193,9 +147,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     padding-left: 5%;
-    /* justify-content: flex-start; */
-    min-width: 100vh;
-    /* background-color: aquamarine; */
+    margin-top: 20%;
     
 }
 .projetos-box{
@@ -203,7 +155,7 @@ body{
     display: flex;
     flex-direction: column;
     /* gap: 28px; */
-    margin-top: 10%; 
+    margin-top: 5%; 
 }
 
 .cards {
@@ -212,7 +164,7 @@ body{
     justify-content: flex-start;
     flex-direction: column;
     gap: 100px;
-    margin-top: 30px;
+    margin-top: 5%;
     /* margin-left: 10%; */
     /* flex-wrap: wrap; */
 }
@@ -226,10 +178,11 @@ body{
     width: 400px;
     padding: 20px;
     background-color: #ff6f27c0;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 0px 10px 2px rgb(190, 22, 190);
 }
+
 .projetos-titulo{
     font-size: 4rem;
     color: aliceblue;
@@ -240,8 +193,88 @@ body{
     color: #ff6e27;
 }
 
-/* .card-image {
-    width: 270px;
-    height: 200px;
-    object-fit: cover;
-}  */
+.card-image {
+    border-radius: 50px;
+}
+.card-buttom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.card-buttom .btn-default{
+    background-color: rgb(190, 22, 190);
+    border-radius: 5px;
+    cursor: pointer;
+    color: aliceblue;
+    justify-content: center;
+    border: none;
+    width: 80%;  
+}
+.btn .btn-default p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.card-buttom a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+/* CONTATO */
+.contato{
+    display: flex;
+    min-height: calc(100vh - 100px);
+    position: relative;
+    justify-content: flex-start;
+    margin-top: 15%;
+      
+}
+.contato-box{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 3%;
+    padding-left: 5%;
+}
+.contato-titulo{
+    font-size: 4rem;
+    color: aliceblue;
+}
+.contato-texto{
+    font-size: 1.2rem;
+    color: #ff6e27;
+}
+.contato-box div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contato-box div i{
+    color: #ff6e27;
+    font-size: 50px;
+}
+/* FOOTER */
+footer {
+    background-color:aliceblue;
+}
+
+.footer-itens {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8% 24px 8%;
+}
+.footer-itens div i{
+    color: #ff6e27;
+}
+
+.copyright {
+    color: #ff6e27;
+    font-weight: 500;
+}
